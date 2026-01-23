@@ -12,8 +12,11 @@ dependencies {
     implementation("io.ktor:ktor-server-core:2.3.7")
     implementation("io.ktor:ktor-server-netty:2.3.7")
     implementation("ch.qos.logback:logback-classic:1.4.14") // 로그 출력용
+    implementation("com.microsoft.playwright:playwright:1.40.0")
+    
 }
 
 application {
-    mainClass.set("AppKt") // 실행할 메인 파일 지정 (파일명이 app.kt이면 AppKt로 입력)
+   // mainClass.set("AppKt") // 실행할 메인 파일 지정 (파일명이 app.kt이면 AppKt로 입력)
+    mainClass.set("PlaywrightTestKt") 
 }
